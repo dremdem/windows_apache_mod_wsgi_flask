@@ -1,0 +1,81 @@
+1. 
+
+Install Apache - 32bit version:
+
+http://www.apachelounge.com/download/VC15/binaries/httpd-2.4.27-Win32-VC15.zip
+
+Just extract Apache24 folder to a c:\ 
+
+2. 
+
+Put mod_wsgi-py27-VC9.so to c:\Apache24\modules
+
+3. 
+
+Put httpd.conf to c:\Apache24\conf
+
+
+4. 
+
+Install Python 2.7.13 
+https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi
+
+
+4.5 
+
+http://www.microsoft.com/en-us/download/details.aspx?id=44266
+
+
+
+5.
+
+Open command line and run:
+
+pip install cx-Oracle
+pip install Flask
+pip install Flask-WTF
+pip install Jinja2
+pip install requests
+pip install mod_wsgi
+
+6. 
+
+Install VC redist
+
+http://download.microsoft.com/download/0/5/6/056dcda9-d667-4e27-8001-8a0c6971d6b1/vcredist_x86.exe
+
+7. 
+
+Install Apache service
+Open command line and run:
+
+cd c:\Apache24\bin\
+httpd.exe -k install
+
+8. 
+
+Place link to a c:\Apache24\bin\ApacheMonitor.exe to Desktop and run it
+
+9. 
+
+Place source code from flask folder to a c:\flask\
+
+10.
+
+Give all access rights c:\flask\ to Everyone
+
+11. 
+
+https://oracle.github.io/odpi/doc/installation.html#windows
+
+
+Download Oracle Instant Client (32-bit, 12.2) and unzip it to a c:\oracle
+Add c:\oracle\instantclient_12_2\ to PATH evironment variable
+
+12. 
+
+Run Apache from ApacheMonitor tray icon
+
+-----------------
+
+Access to a site is: localhost:8080
